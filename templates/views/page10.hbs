@@ -1,0 +1,282 @@
+<!Doctype html>
+<html lang="en">
+<head>
+    
+    <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    
+    <link type="text/css" rel="stylesheet" href="css/style.css">
+    <title>Mentor Flow</title>
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrisssty="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <style>
+	@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700&display=swap');
+	</style>
+    
+   <style>
+   body
+		{
+			background-image: url(img/Rectangle%205.png);
+			background-repeat: no-repeat;
+			background-size: cover;
+            background-position: right;
+			overflow-x: hidden;
+            font-family: 'Poppins', sans-serif;
+           
+		}
+
+        header img
+        {
+            position: absolute;
+            left: 330px;
+            top: 14px;
+            z-index: -1;
+            height: 122px;
+            width: auto;
+        }
+        header .img1
+        {
+            position: absolute;
+            left:630px;
+            top: 58px;
+            z-index: -1;
+            height: 122px;
+            width: auto;
+        }
+       header h3
+       {
+           color: white;
+            padding-top: 20px;
+       }
+       header span
+       {
+           color: white;
+          text-align: center;
+           font-size: 18px;
+           margin-left: 230px;
+       }
+       .login
+		{
+            width: 100%;
+            height: auto;
+            background-color: white;
+            margin-top: 25px;
+			border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+            padding: 30px;
+		}
+       .loginpage  h5
+       {
+           padding: 20px 0px;
+       }
+       form
+       {
+        margin: 2em 0;
+       }
+       .field
+       {
+          display: flex;
+          flex-flow: column-reverse;
+          margin-bottom: 1em;
+        }
+       label, input 
+       {
+          transition: all 0.2s;
+          touch-action: manipulation;
+        }
+       input
+       {
+          font-size: 1.5em;
+          border: 0;
+          border-bottom: 1px solid #ccc;
+          font-family: inherit;
+          -webkit-appearance: none;
+          border-radius: 0;
+          padding: 0;
+          cursor: text;
+        }
+        input:focus
+       {
+          outline: 0;
+          border-bottom: 1px solid #666;
+        }
+
+        input:placeholder-shown + label 
+       {
+          cursor: text;
+          max-width: 20.66%;
+            white-space: nowrap;
+            font-size: 11px;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          transform-origin: left bottom;
+          transform: translate(0, 2.125rem) scale(1.5);
+        }
+
+        ::-webkit-input-placeholder
+       {
+          opacity: 0;
+          transition: inherit;
+            font-size: 14px;
+        }
+
+        input:focus::-webkit-input-placeholder 
+       {
+          opacity: 1;
+        }
+
+        input:not(:placeholder-shown) + label,
+        input:focus + label
+       {
+          transform: translate(0, 0) scale(1);
+          cursor: pointer;
+        text-align: left;
+        }
+        .loginpage
+       {
+           width: 40%;
+       }
+        .loginpage h6
+       {
+           text-align: left;
+           font-size: 18px;
+           color:  #4E3FA2;
+           margin-bottom: 30px;
+           margin-top: 30px;
+       }
+        .loginpage h3
+       {
+           text-align: left;
+           font-size: 24px;
+           margin-bottom: 30px;
+           line-height: 35px;
+           margin-top: 30px;
+       }
+        .loginpage button
+       {
+           width: 100%;
+           height: 40px;
+           background-color:#4E3FA2;
+           color: white;
+           border: 1px solid #4E3FA2;
+           border-radius: 4px;
+           margin-top: 80px;
+       }
+       @media only screen and (max-width:360px)
+       {
+           
+        .loginpage
+           {
+               width: 100%;
+                padding: 0px;
+                margin: 0px;
+                display: grid;
+           }
+           .loginpage h6
+           {
+               font-size: 14px;
+               margin-bottom: 10px;
+           }
+           .loginpage h3
+           {
+               font-size: 16px;
+               margin-top: 15px;
+               margin-bottom: 15px;
+           }
+           header h3
+       {
+           color: transparent;
+            padding-top: 20px;
+       }
+       header h3 span
+           {
+               color: white;
+               margin-left: 0px;
+               text-align: left;
+               display: block;
+           }
+           header img
+        {
+            position: absolute;
+            left: 10px;
+            top: 15px;
+            z-index: -1;
+            height: 122px;
+            width: auto;
+        }
+  
+        header .img1
+        {
+            position: absolute;
+            left: 210px;
+            top: 75px;
+            z-index: -1;
+            height: 122px;
+            width: auto;
+        }
+               
+           
+           form
+            {
+  
+                margin: 0px;
+            }
+       }
+ </style> 
+</head>
+<body>
+    
+   		<header>
+		<div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <center><img src="img/Group%202156.png">
+                    <img src="img/Union%202.png" class="img1">
+                    </center> 
+               <h3>INSPIRE<span>Hi, Suresh!</span></h3>
+              
+              </div>
+            </div>  
+           </div>
+</header>
+
+	
+		<section class="login">
+		<div class="container">
+		<div class="row">
+			<div class="col-md-12 col-6">
+			<center>
+                
+            <div class="loginpage">
+                <center><h6>Thank you for taking such a big step today!</h6></center>  
+                <center><h3>Help us with your basic details to<br>continue the registration process.</h3></center>
+                <form action="">
+                  <div class="field">
+                    <input type="text" name="number" id="number" placeholder="+91 9746298743">
+                    <label for="fullname">Mobile No</label>
+                  </div>
+
+                  <div class="field">
+                    <input type="email" name="email" id="email" placeholder="sureshk@gmail.com">
+                    <label for="email">Email ID</label>
+                  </div>
+                  </form>
+                
+                <a href="page11"><button>GET OTP</button></a>
+                
+                </div>
+                
+                </center>
+                
+				
+			</div>
+			</div>
+		</div>
+</section> 
+</body>
+</html>

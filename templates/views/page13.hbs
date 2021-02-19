@@ -1,0 +1,323 @@
+<!Doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+	
+	<link type="text/css" rel="stylesheet" href="css/style.css">
+	
+	<title>Mentor Flow</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrisssty="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <style>
+	@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700&display=swap');
+	</style>
+	<style>
+		body
+		{
+			background-image: url(img/Rectangle%205.png);
+			background-repeat: no-repeat;
+			background-size: cover;
+            background-position: right;
+			overflow-x: hidden;
+            font-family: 'Poppins', sans-serif;
+		}
+
+		.approve
+		{
+            width: 100%;
+            height: 70vh;
+			background-color: white;
+			box-shadow: 0px 0px 1px white;
+			margin-top: 25px;
+			border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+
+		}
+        
+        .approvepage
+        {
+            width: 40%;
+        }
+        form
+       {
+        margin: 2em 0;
+       }
+       .field
+       {
+          display: flex;
+          flex-flow: column-reverse;
+          margin-bottom: 1em;
+        }
+       label, input 
+       {
+          transition: all 0.2s;
+          touch-action: manipulation;
+        }
+       input
+       {
+          font-size: 1.5em;
+          border: 0;
+          border-bottom: 1px solid #ccc;
+          font-family: inherit;
+          -webkit-appearance: none;
+          border-radius: 0;
+          padding: 0;
+          cursor: text;
+        }
+        input:focus
+       {
+          outline: 0;
+          border-bottom: 1px solid #666;
+        }
+
+        input:placeholder-shown + label 
+       {
+          cursor: text;
+          max-width: 50.66%;
+            white-space: nowrap;
+            font-size: 11px;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          transform-origin: left bottom;
+          transform: translate(0, 2.125rem) scale(1.5);
+        }
+
+        ::-webkit-input-placeholder
+       {
+          opacity: 0;
+          transition: inherit;
+            font-size: 14px;
+        }
+
+        input:focus::-webkit-input-placeholder 
+       {
+          opacity: 1;
+        }
+
+        input:not(:placeholder-shown) + label,
+        input:focus + label
+       
+       {
+          transform: translate(0, 0) scale(1);
+          cursor: pointer;
+        text-align: left;
+           font-size: 12px;
+            opacity: 0.6;
+        }
+     
+
+          .btn
+                {
+                  background-color:#cbcbcb;
+                  color:white;
+                  margin-top:5em;
+                  padding:1.2em 8em 1.2em 8em;
+                  width:100%;
+                 }
+        checkbox
+        {
+            color: black;
+            border: 1px solid red;
+        }
+      @media only screen and (max-width:360px) 
+        {
+    .approvepage{
+        width: 100%;
+              }
+  }
+input[type="text"]::placeholder {text-align: left; }
+
+label{
+text-align: left; 
+}
+ @media only screen and (max-width:360px)
+ {
+     header .fas
+     {
+         float: left;
+         margin-top: 10px;
+         margin-left: 20px;
+     }
+     header h3
+     {
+         margin-top: 10px;
+         margin-left: -20px;
+     }
+     header img
+        {
+            position: absolute;
+            left: 10px;
+            top: 15px;
+            z-index: -1;
+            height: 122px;
+            width: auto;
+        }
+             header .img1
+        {
+            position: absolute;
+            left: 210px;
+            top: 65px;
+            z-index: -1;
+            height: 122px;
+            width: auto;
+        }
+        }
+		
+</style>
+	</head>
+    <body>
+		<header>
+		<div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <center><img src="img/Group%202156.png">
+                    <img src="img/Union%202.png" class="img1">
+                    </center> 
+               <h3>INSPIRE<span><i class="fas fa-long-arrow-alt-left"></i> Menter Details</span></h3>
+              
+              </div>
+            </div>  
+           </div>
+</header>
+		
+	<center>
+	<section class="approve">
+		<div class="container">
+		<div class="row">
+			<div class="col-12 col-md-12 col-xs-12 ">
+			<div class="approvepage">
+             <form action="">
+                 <center><img src="img/Group%202152.png"></center>
+               
+              <div class="row">
+                  <div class="col-lg-6 col-md-6 col-6">      
+                      <div class="field">
+                    <input type="text" name="name" id="number" placeholder="Suresh">
+                    <label for="fullname">Name</label>
+                  </div>
+                   </div>
+                  <div class="col-lg-6 col-md-6 col-6">
+                     
+                      <div class="field">
+                    <input type="text" name="name" id="number" placeholder="K">
+                    <label for="fullname">Surname</label>
+    
+                 </div>
+              </div>
+
+          </div>
+             <div class="row">
+                  <div class="col-lg-6 col-md-6 col-6"> 
+                  <div class="field">
+                     <input type="text" name="gender" id="gender"  placeholder="Male">
+                    <label for="gender">Gender</label>
+                  </div>
+                 </div>
+
+                  <div class="col-lg-6 col-md-6 col-6"> 
+                   <div class="field">
+                     <input type="date" name="date" id="date"  placeholder="10/05/1980">
+                    <label for="date">Date Of Birth</label>
+                  </div>
+                 </div>
+             </div>
+
+              <div class="row">
+                  <div class="col-lg-12 col-md-12 col-sm-12">      
+                      <div class="field">
+                            <input type="text" name="name" id="name" placeholder="Health Professional">
+                           <label for="name">Profession</label>
+                      </div>
+                   </div>
+               </div>
+           
+
+
+              <div class="row">
+                  <div class="col-lg-12 col-md-12 col-sm-12">      
+                      <div class="field">
+                            <input type="text" name="name" id="name" placeholder="English,Telugu">
+                           <label for="name">Languages Spoken</label>
+                      </div>
+                   </div>
+              </div>
+
+
+           <div class="row">
+                  <div class="col-lg-12 col-md-12 col-sm-12">      
+                      <div class="field">
+                        <input type="number" name="number" id="number" placeholder="+91 9746298743">
+                        <label for="fullname">Mobile Number1</label>
+                          
+                      </div>
+                      <input type="checkbox" name="box" id="box" checked="checked" placeholder="Same as the Mobile number1">
+                              <i class="fab fa-whatsapp"></i>
+                           <label for="box">Same as the Mobile Number 1</label>
+                   </div>
+             </div>
+
+          
+             <div class="row">
+                  <div class="col-lg-12 col-md-12 col-sm-12">      
+           
+                      <div class="field">
+                            
+                      </div>
+                   </div>
+    
+              </div>
+          
+
+           <div class="row">
+                  <div class="col-lg-12 col-md-12 col-sm-12">      
+                      <div class="field">
+                            <input type="text" name="name" id="name" placeholder="Lorem Ipsum">
+                           <label for="name">Whatsup Number</label>
+                      </div>
+                   </div>
+    
+              </div>
+           
+
+             <div class="row">
+                 <div class="col-lg-12 col-md-12 col-sm-12">        
+                   <div class="field">
+                    <input type="email" name="email" id="email" placeholder="Sureshk@gmail.com">
+                    <label for="email">Email ID</label>
+                  </div>
+                 </div>
+             </div>
+
+              
+           <div class="row">
+                 <div class="col-lg-12 col-md-12 col-sm-12">        
+                   <div class="field">
+                     <button type="submit" class="btn">SAVE</button>
+                  </div>
+                 </div>
+             </div>
+
+ 
+
+
+                  </form>
+                
+                
+                </div>
+                </div>
+            </div>
+			
+		</div>
+		
+</section>
+		
+		</center>
+		
+	</body>
+</html>
