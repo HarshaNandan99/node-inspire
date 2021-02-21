@@ -71,24 +71,24 @@
 // signIn(userNamePromt, passwordPromt);
 
 
-fetch('/login'). then((response) => {
+// fetch('/login'). then((response) => {
     
-        // function validate() {
-        // var mobilenumber = document.getElementById("mobilenumber").value;
+        function validate() {
+        var mobilenumber = document.getElementById("mobilenumber").value;
     
-        // if(mobilenumber == "9030055777")
-        // {
-        //     console.log("login successful")
-        //     // document.location.href = "page2";
-        //     return false;
-        // }
-        // else
-        // {
-        //     console.log("login failed")
-        //     // alert("login failed");
-        // }
-    // }
-}
-)
+        if(mobilenumber == "9030055777")
+        {
+            alert("login successful")
+            document.location.href = "page2";
+            return false;
+        }
+        else
+        {
+            // console.log("login failed")
+            alert("login failed");
+        }
+    }
+// }
+// )
 
     
