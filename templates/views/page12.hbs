@@ -17,19 +17,18 @@
     <style>
         body
         {
-            background-image: url(img/Rectangle%206.png);
+            background-image: url(images/Rectangle%206.png);
             background-repeat: no-repeat;
             background-size: cover;
             overflow-x: hidden;
             overflow-y: hidden;
             font-family: 'Poppins', sans-serif;
         }
-
-         
       
      .bar
         {
             float: left;
+           
         }
          .text
         {
@@ -137,6 +136,49 @@
             margin-top: 10px;
         }
         
+        
+.overlay {
+  height: 0%;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.9);
+  overflow-y: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+      
     
         @media only screen and (max-width:360px)
         {
@@ -148,9 +190,9 @@
         .btn1
         {
             float: left;
-            font-size: 13px;
-            height: 50px;
-            padding: 10px 45px;
+    font-size: 13px;
+    padding: 10px 30px;
+   
             
         }
         .btn
@@ -188,23 +230,61 @@
             {
                 margin-top: 20px;
             }
+            
+            .overlay a {font-size: 20px}
+  .overlay .closebtn {
+  font-size: 40px;
+  top: 15px;
+  right: 35px;
+  }
+            
+            
+
         }
 </style>
     </head>
 <body>
+    
+    
+  <div id="myNav" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <div class="overlay-content">
+    <a href="#">About</a>
+    <a href="#">Services</a>
+    <a href="#">Clients</a>
+    <a href="#">Contact</a>
+  </div>
+</div>
+    
     <center>
     <section class="approve">
         <div class="container">
         <div class="row">
             <div class="col-12 col-md-12 col-xs-12 ">
             <div class="approvepage">
-                <cenetr>
+                <cenetr>            
                 <div class="bar">
-                <i class="fas fa-bars"></i>
+                    
+                    <span style="cursor:pointer;color: white" onclick="openNav()">☰</span>
                 </div>
-                <div class="text">
-                <center><h3>INSPIRE</h3></center>
+                   
+<script>
+function openNav() {
+  document.getElementById("myNav").style.height = "100%";
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.height = "0%";
+}
+</script>
+     
+                    
+                    
+                    
+                     <div class="text">
+                <h3>INSPIRE</h3>
                 </div>
+                
                 <div class="notifi">
                 <i class="far fa-bell"></i>
                 </div>
@@ -219,7 +299,7 @@
                   </div>
                     
                      <div class="mentor">
-                    <a href="page13"><button class="btn">Mentorship</button></a>
+                    <a href="page13.html"><button class="btn">Mentorship</button></a>
                   <span>1 on 1 mentoring</span>   
                   </div>
                     <br>
@@ -228,15 +308,15 @@
                     <br>
                     <div class="pic1">
                         <p>Mentor Speech</p><br>
-                   <img src="img/Image%20123.png" alt="image1">
+                   <img src="images/Image%20123.png" alt="image1">
                   </div>
                     
                      <div class="pic2">
-                   <img src="img/Image%20122.png" alt="image2">
+                   <img src="images/Image%20122.png" alt="image2">
                   </div>
                     
                     <div class="pic3">
-                   <img src="img/Image%20126.png" alt="image3">
+                   <img src="images/Image%20126.png" alt="image3">
                  </div>
                     
                 </cenetr>
